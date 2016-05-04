@@ -14,6 +14,11 @@
 		46408F8B1CC818FB004D4ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46408F891CC818FB004D4ECE /* LaunchScreen.storyboard */; };
 		46408F931CC84DF2004D4ECE /* dragImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46408F921CC84DF2004D4ECE /* dragImage.swift */; };
 		46408F951CC85234004D4ECE /* monsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46408F941CC85234004D4ECE /* monsterImg.swift */; };
+		464214631CDA9D1F0026E17E /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 464214621CDA9D1F0026E17E /* music.mp3 */; };
+		464214651CDA9DCB0026E17E /* robodeath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 464214641CDA9DCB0026E17E /* robodeath.wav */; };
+		464214671CDA9E750026E17E /* Robot_blip1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 464214661CDA9E750026E17E /* Robot_blip1.wav */; };
+		464214691CDA9EB70026E17E /* robot_blip2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 464214681CDA9EB70026E17E /* robot_blip2.wav */; };
+		4642146B1CDA9FBC0026E17E /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4642146A1CDA9FBC0026E17E /* skull.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		46408F8C1CC818FB004D4ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46408F921CC84DF2004D4ECE /* dragImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dragImage.swift; sourceTree = "<group>"; };
 		46408F941CC85234004D4ECE /* monsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = monsterImg.swift; sourceTree = "<group>"; };
+		464214621CDA9D1F0026E17E /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		464214641CDA9DCB0026E17E /* robodeath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = robodeath.wav; sourceTree = "<group>"; };
+		464214661CDA9E750026E17E /* Robot_blip1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Robot_blip1.wav; sourceTree = "<group>"; };
+		464214681CDA9EB70026E17E /* robot_blip2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = robot_blip2.wav; sourceTree = "<group>"; };
+		4642146A1CDA9FBC0026E17E /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				46408F801CC818FB004D4ECE /* AppDelegate.swift */,
+				464214641CDA9DCB0026E17E /* robodeath.wav */,
 				46408F821CC818FB004D4ECE /* ViewController.swift */,
+				464214621CDA9D1F0026E17E /* music.mp3 */,
+				464214661CDA9E750026E17E /* Robot_blip1.wav */,
+				4642146A1CDA9FBC0026E17E /* skull.wav */,
+				464214681CDA9EB70026E17E /* robot_blip2.wav */,
 				46408F841CC818FB004D4ECE /* Main.storyboard */,
 				46408F921CC84DF2004D4ECE /* dragImage.swift */,
 				46408F871CC818FB004D4ECE /* Assets.xcassets */,
@@ -128,8 +143,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4642146B1CDA9FBC0026E17E /* skull.wav in Resources */,
+				464214671CDA9E750026E17E /* Robot_blip1.wav in Resources */,
+				464214631CDA9D1F0026E17E /* music.mp3 in Resources */,
 				46408F8B1CC818FB004D4ECE /* LaunchScreen.storyboard in Resources */,
+				464214651CDA9DCB0026E17E /* robodeath.wav in Resources */,
 				46408F881CC818FB004D4ECE /* Assets.xcassets in Resources */,
+				464214691CDA9EB70026E17E /* robot_blip2.wav in Resources */,
 				46408F861CC818FB004D4ECE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +316,7 @@
 				46408F911CC818FB004D4ECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
