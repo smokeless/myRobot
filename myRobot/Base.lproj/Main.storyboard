@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myRobot" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,94 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="GdW-W3-YQk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy1" translatesAutoresizingMaskIntoConstraints="NO" id="zIX-s7-ONb" customClass="MonsterImg" customModule="myRobot" customModuleProvider="target">
+                                <rect key="frame" x="229" y="385" width="142" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="WEe-El-Ruq"/>
+                                    <constraint firstAttribute="width" constant="142" id="p5F-sS-r7a"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="21-skull-png-image-thumb" translatesAutoresizingMaskIntoConstraints="NO" id="MJG-cN-E7v">
+                                <rect key="frame" x="161" y="29" width="87" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="Egr-LU-GqW"/>
+                                    <constraint firstAttribute="height" constant="71" id="sEr-vc-FZV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21-skull-png-image-thumb" translatesAutoresizingMaskIntoConstraints="NO" id="SMi-Fe-TpM">
+                                <rect key="frame" x="257" y="28" width="87" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="6aF-fk-Xmh"/>
+                                    <constraint firstAttribute="width" constant="87" id="8TU-kG-Sa8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21-skull-png-image-thumb" translatesAutoresizingMaskIntoConstraints="NO" id="NdZ-mW-r8d">
+                                <rect key="frame" x="352" y="28" width="87" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="d2n-CG-YZj"/>
+                                    <constraint firstAttribute="width" constant="87" id="kKN-pe-ygU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="DNU-dC-yk7">
+                                <rect key="frame" x="0.0" y="504" width="600" height="96"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="QCc-kV-2Vp">
+                                <rect key="frame" x="106" y="107" width="388" height="144"/>
+                                <subviews>
+                                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oil_Can-512" translatesAutoresizingMaskIntoConstraints="NO" id="Dyv-Rj-LcR" customClass="DragImg" customModule="myRobot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                                    </imageView>
+                                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-gear-huge" translatesAutoresizingMaskIntoConstraints="NO" id="EGo-cZ-ZNR" customClass="DragImg" customModule="myRobot" customModuleProvider="target">
+                                        <rect key="frame" x="244" y="0.0" width="144" height="144"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zIX-s7-ONb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="09Y-Vm-iBT"/>
+                            <constraint firstItem="MJG-cN-E7v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3y5-BH-QuL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zIX-s7-ONb" secondAttribute="bottom" constant="96" id="A3N-Ac-6gv"/>
+                            <constraint firstItem="SMi-Fe-TpM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EcD-9m-u6w"/>
+                            <constraint firstItem="NdZ-mW-r8d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HdX-vu-jz7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DNU-dC-yk7" secondAttribute="bottom" id="RLk-n6-LlA"/>
+                            <constraint firstItem="QCc-kV-2Vp" firstAttribute="top" secondItem="NdZ-mW-r8d" secondAttribute="bottom" constant="8" id="Rbg-U9-X1a"/>
+                            <constraint firstItem="SMi-Fe-TpM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="SAX-eH-WaY"/>
+                            <constraint firstAttribute="trailing" secondItem="GdW-W3-YQk" secondAttribute="trailing" id="SoE-Oy-zsY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GdW-W3-YQk" secondAttribute="bottom" id="Th4-dV-wC1"/>
+                            <constraint firstItem="DNU-dC-yk7" firstAttribute="top" secondItem="zIX-s7-ONb" secondAttribute="bottom" id="iwp-F1-0A4"/>
+                            <constraint firstItem="QCc-kV-2Vp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jnT-K3-q2l"/>
+                            <constraint firstItem="GdW-W3-YQk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mrk-qU-7WG"/>
+                            <constraint firstItem="NdZ-mW-r8d" firstAttribute="leading" secondItem="SMi-Fe-TpM" secondAttribute="trailing" constant="8" id="rfr-Mw-0gL"/>
+                            <constraint firstItem="SMi-Fe-TpM" firstAttribute="leading" secondItem="MJG-cN-E7v" secondAttribute="trailing" constant="8" id="sZV-9I-il4"/>
+                            <constraint firstItem="DNU-dC-yk7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFM-EC-15g"/>
+                            <constraint firstItem="GdW-W3-YQk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ytU-Ja-5nx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodImg" destination="Dyv-Rj-LcR" id="T86-db-SIi"/>
+                        <outlet property="heartImg" destination="EGo-cZ-ZNR" id="XeK-Um-sOD"/>
+                        <outlet property="monsterImg" destination="zIX-s7-ONb" id="lhK-ki-3yZ"/>
+                        <outlet property="penalty1" destination="MJG-cN-E7v" id="pBc-68-sH6"/>
+                        <outlet property="penalty2" destination="SMi-Fe-TpM" id="YUU-5z-bwO"/>
+                        <outlet property="penalty3" destination="NdZ-mW-r8d" id="Uog-lV-Z2J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="211" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="21-skull-png-image-thumb" width="200" height="200"/>
+        <image name="Oil_Can-512" width="144" height="144"/>
+        <image name="background" width="727" height="667"/>
+        <image name="ground" width="1600" height="1600"/>
+        <image name="happy1" width="640" height="480"/>
+        <image name="main-gear-huge" width="72" height="72"/>
+    </resources>
 </document>
